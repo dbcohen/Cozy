@@ -1,0 +1,26 @@
+---
+import Icon from "astro-iconify";
+---
+<div id="announcement-p" style="margin: 1em auto 0; padding: 0.5em; border-radius: 5px; box-shadow: 0 1px 3px 1px #eee; border-left: 5px; border-left: 5px solid orange; background-color: antiquewhite;">
+    <div style="display:flex; margin-bottom: 0.5em; width: 100%;">
+        <h2>📣 Announcement</h2>
+        <label style="text-decoration:underline; cursor:pointer;" onclick="document.querySelector('#announcement-p').style.display = 'none'">
+            <Icon name="mdi:close" />
+        </label>
+    </div>
+    <p style="padding: 0.5em">
+        We started the move to a <a target="_blank" href="https://cozy-reader.vercel.app">new address</a>. As part of this move, we'll release a feature for you to export a backup file of your data, which you'll be able to import for use in the new deployment. If you don't mind losing your current history you can just use the new environment as usual. Thank you for your patience and understanding. 🙏
+    </p>
+</div>
+
+<style>
+    h2, svg {
+        flex: 1;
+    }
+    svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        border: 1px solid #ccc
+    }
+</style>

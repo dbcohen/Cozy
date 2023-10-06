@@ -6,6 +6,7 @@ import Post from "../components/Post.astro";
 import Layout from "../layouts/Layout.astro";
 import Library from "../components/Library.astro";
 import Footer from "../components/Footer.astro";
+import Announcement from "../components/Announcement.astro";
 
 const appConfig = {
   routerOutlet: 'router-outlet',
@@ -30,6 +31,7 @@ if (url)
 ---
 <Layout article={article}>
     <AddressBar url={url} />
+    <Announcement />
     <div slot="post" id={appConfig.routerOutlet}>
       <Post article={article} />
     </div>
